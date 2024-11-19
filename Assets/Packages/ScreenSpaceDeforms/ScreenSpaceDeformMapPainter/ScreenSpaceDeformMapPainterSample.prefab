@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2052056186523053685}
   - component: {fileID: 8947049105908771768}
   m_Layer: 0
-  m_Name: DeformMapPainterSample
+  m_Name: ScreenSpaceDeformMapPainterSample
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

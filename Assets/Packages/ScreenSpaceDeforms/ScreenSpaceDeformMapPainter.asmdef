@@ -1,8 +1,9 @@
 {
-    "name": "ScreenSpaceDeform",
+    "name": "ScreenSpaceDeformMapPainter",
     "rootNamespace": "",
     "references": [
-        "GUID:3afd393eaeaad1342837e3076d8fb51f"
+        "GUID:3afd393eaeaad1342837e3076d8fb51f",
+        "GUID:3a11bdf044298f241a471890cc0fd6d1"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

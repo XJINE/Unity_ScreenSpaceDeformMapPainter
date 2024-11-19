@@ -1,4 +1,4 @@
-Shader "Unlit/DeformMapPainterSample"
+Shader "Unlit/ScreenSpaceDeformMapPainterSample"
 {
     Properties
     {
@@ -15,7 +15,7 @@ Shader "Unlit/DeformMapPainterSample"
             #pragma vertex   vert
             #pragma fragment frag
 
-            #include "../ScreenSpaceDeform.hlsl"
+            #include "Packages/com.xjine.screen_space_deform_shader/ScreenSpaceDeformLibrary.hlsl"
 
             struct appdata
             {

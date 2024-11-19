@@ -355,7 +355,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1047463141}
-          m_TargetAssemblyTypeName: DeformShaders.DeformMapPainter, Assembly-CSharp
+          m_TargetAssemblyTypeName: ScreenSpaceDeforms.ScreenSpaceDeformMapPainter,
+            ScreenSpaceDeform
           m_MethodName: ToggleGUI
           m_Mode: 1
           m_Arguments:

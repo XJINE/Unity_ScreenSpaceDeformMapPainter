@@ -3,11 +3,11 @@ using XGUI;
 using System.IO;
 
 namespace ScreenSpaceDeforms {
-public partial class DeformMapPainter {
+public partial class ScreenSpaceDeformMapPainter {
 
     #region Field
 
-    private readonly FlexWindow _guiWindow = new (nameof(DeformMapPainter)) { MinWidth  = 300, MinHeight = 200 };
+    private readonly FlexWindow _guiWindow = new (nameof(ScreenSpaceDeformMapPainter)) { MinWidth  = 300, MinHeight = 200 };
 
     private static readonly FoldoutPanel PaintPanel      = new ("Paint");
     private static readonly FoldoutPanel SamplePanel     = new ("Sample");

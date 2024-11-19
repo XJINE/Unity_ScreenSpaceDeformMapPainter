@@ -102,12 +102,26 @@
       "dependencies": {},
       "hash": "d8aa42ad7b6b785bc8f4a17c7e1122d56f12893c"
     },
+    "com.xjine.key_debug_manager": {
+      "version": "https://github.com/XJINE/Unity_KeyDebugManager.git?path=Assets/Packages/KeyDebugManager",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "68a285dcd511f6d5afa27eceec6faca2d4c907b6"
+    },
     "com.xjine.screen_space_deform_shader": {
       "version": "https://github.com/XJINE/Unity_ScreenSpaceDeformShader.git?path=Assets/Packages/ScreenSpaceDeformShader",
       "depth": 0,
       "source": "git",
       "dependencies": {},
       "hash": "0bd8793629e7e6c8fca664e15f0290a3787cccf3"
+    },
+    "com.xjine.singleton_mono_behaviour": {
+      "version": "https://github.com/XJINE/Unity_SingletonMonoBehaviour.git?path=Assets/Packages/SingletonMonoBehaviour",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "f904ac27b29735306e21dbfaa3cf976a04e6b30b"
     },
     "com.xjine.xgui": {
       "version": "https://github.com/XJINE/Unity_XGUI.git?path=Assets/Packages/XGUI",

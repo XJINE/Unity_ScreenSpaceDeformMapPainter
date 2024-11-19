@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ScreenSpaceDeforms
 {
-    public partial class DeformMapPainter : MonoBehaviour
+    public partial class ScreenSpaceDeformMapPainter : MonoBehaviour
     {
         #region Field
 
