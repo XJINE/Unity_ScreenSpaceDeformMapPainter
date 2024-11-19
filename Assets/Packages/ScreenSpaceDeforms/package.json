@@ -1,0 +1,18 @@
+{
+    "name"       : "com.xjine.screen_space_deform_map_painter",
+    "displayName": "Screen Space Deform Map Painter", 
+    "version"    : "1.0.0",
+    "unity"      : "2022.3",
+    "description": "Paint tool to create a deform map.",
+    "author"     :
+    {
+        "name": "XJINE",
+        "url" : "https://github.com/XJINE"
+    },
+    "keywords":
+    [
+    ],
+    "dependencies":
+    {
+    }
+}
