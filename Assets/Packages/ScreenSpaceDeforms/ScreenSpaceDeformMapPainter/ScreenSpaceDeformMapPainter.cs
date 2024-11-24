@@ -93,6 +93,7 @@ namespace ScreenSpaceDeforms
             _texture2D = texture;
             _pixelData = _texture2D.GetPixelData<Color32>(0);
             canvas.GetComponent<Renderer>().material.mainTexture = _texture2D;
+            Shader.SetGlobalTexture(_GlobalScreenSpaceDeformTex, _texture2D);
         }
 
         private void InitializeTexture()
