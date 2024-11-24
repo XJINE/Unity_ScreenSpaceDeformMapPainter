@@ -37,6 +37,8 @@ namespace ScreenSpaceDeforms
         private Texture2D            _texture2D;
         private NativeArray<Color32> _pixelData;
 
+        private const string _GlobalScreenSpaceDeformTex = nameof(_GlobalScreenSpaceDeformTex);
+
         #endregion Field
 
         #region Method
@@ -82,7 +84,7 @@ namespace ScreenSpaceDeforms
                 _texture2D.Apply();
             }
 
-            Shader.SetGlobalTexture("_GlobalScreenSpaceDeformTex", _texture2D);
+            Shader.SetGlobalTexture(_GlobalScreenSpaceDeformTex, _texture2D);
             UpdateCanvasScale();
         }
 
@@ -97,6 +99,7 @@ namespace ScreenSpaceDeforms
         {
             (_texture2D, _pixelData) = MetaTextureUtil.GenerateNewTexture(initSize.x, initSize.y, initColor);
             canvas.GetComponent<Renderer>().material.mainTexture = _texture2D;
+            Shader.SetGlobalTexture(_GlobalScreenSpaceDeformTex, _texture2D);
         }
 
         private void UpdateCanvasScale()

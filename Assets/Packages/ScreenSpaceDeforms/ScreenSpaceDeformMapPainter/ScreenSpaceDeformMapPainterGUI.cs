@@ -129,6 +129,8 @@ public partial class ScreenSpaceDeformMapPainter {
 
     private void LoadTexture(string filePath)
     {
+        filePath = filePath.Trim('"');
+
         if (!File.Exists(filePath))
         {
             _statusMessage = "File not found : " + filePath;
