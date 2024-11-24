@@ -19,6 +19,7 @@ public partial class ScreenSpaceDeformMapPainter {
     private readonly FlexGUI<float>      _sigmaGUI        = new ("Sigma", 0, 255);
     private readonly FlexGUI<Vector2>    _clampGUI        = new ("Clamp",         Vector2.one * -1, Vector2.one * 1)       { Slider = false };
     private readonly FlexGUI<Vector2Int> _samplesCountGUI = new ("Samples Count", Vector2Int.zero,  Vector2Int.one * 4096) { Slider = false };
+    private readonly FlexGUI<float>      _samplesScaleGUI = new ("Samples Scale", 0,                100)                   { Slider = false };
     private readonly FlexGUI<Vector2Int> _initSizeGUI     = new ("Init Size",     Vector2Int.zero,  Vector2Int.one * 4096) { Slider = false };
 
     private static string _statusMessage = "";
@@ -45,6 +46,7 @@ public partial class ScreenSpaceDeformMapPainter {
             SamplePanel.Show(() =>
             {
                 sampleObjectCount = _samplesCountGUI.Show(sampleObjectCount);
+                sampleObjectScale = _samplesScaleGUI.Show(sampleObjectScale);
 
                 if(GUILayout.Button("Create Samples"))
                 {
