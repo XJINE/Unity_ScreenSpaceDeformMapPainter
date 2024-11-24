@@ -41,7 +41,7 @@ public static class MetaTextureUtil
                                                  int   width,    int   height,
                                                  int   centerX,  int   centerY,
                                                  float sigma,    float power,
-                                                 float clampMin, float clampMax,
+                                                 float clampMin, float clampMax, int clampTarget,
                                                  Color color)
     {
         for (var y = 0; y < height; y++)
@@ -59,10 +59,10 @@ public static class MetaTextureUtil
                 var currentColor = GetPixel(pixelData, width, x, y);
                 var newColor     = currentColor + color * gaussianFactor * power;
 
-                newColor = new Color(Mathf.Clamp(newColor.r, clampMin, clampMax),
-                                     Mathf.Clamp(newColor.g, clampMin, clampMax),
-                                     Mathf.Clamp(newColor.b, clampMin, clampMax),
-                                     Mathf.Clamp(newColor.a, clampMin, clampMax));
+                newColor = new Color(clampTarget == 0 ? Mathf.Clamp(newColor.r, clampMin, clampMax) : newColor.r,
+                                     clampTarget == 1 ? Mathf.Clamp(newColor.g, clampMin, clampMax) : newColor.g,
+                                     clampTarget == 2 ? Mathf.Clamp(newColor.b, clampMin, clampMax) : newColor.b,
+                                     clampTarget == 3 ? Mathf.Clamp(newColor.a, clampMin, clampMax) : newColor.a);
 
                 SetPixel(pixelData, width, x, y, newColor);
             }

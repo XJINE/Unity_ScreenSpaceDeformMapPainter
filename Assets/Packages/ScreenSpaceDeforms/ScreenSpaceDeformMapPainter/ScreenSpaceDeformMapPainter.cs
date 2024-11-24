@@ -76,7 +76,8 @@ namespace ScreenSpaceDeforms
                 MetaTextureUtil.ApplyGaussianDistribution
                 (_pixelData, _texture2D.width, _texture2D.height, pixelCoord.x, pixelCoord.y,
                   paintSigma,   paintPower * (Input.GetMouseButton(1) ? -1 : 1),
-                  paintClamp.x, paintClamp.y, color);
+                  paintClamp.x, paintClamp.y, currentPaintMode == PaintMode.ScaleX ? 0 : 1,
+                  color);
 
                 _texture2D.Apply();
             }
