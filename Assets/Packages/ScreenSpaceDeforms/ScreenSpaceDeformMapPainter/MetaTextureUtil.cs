@@ -62,7 +62,8 @@ public static class MetaTextureUtil
                 newColor = new Color(clampTarget == 0 ? Mathf.Clamp(newColor.r, clampMin, clampMax) : newColor.r,
                                      clampTarget == 1 ? Mathf.Clamp(newColor.g, clampMin, clampMax) : newColor.g,
                                      clampTarget == 2 ? Mathf.Clamp(newColor.b, clampMin, clampMax) : newColor.b,
-                                     clampTarget == 3 ? Mathf.Clamp(newColor.a, clampMin, clampMax) : newColor.a);
+                                     1);
+                                     // clampTarget == 3 ? Mathf.Clamp(newColor.a, clampMin, clampMax) : newColor.a);
 
                 SetPixel(pixelData, width, x, y, newColor);
             }
